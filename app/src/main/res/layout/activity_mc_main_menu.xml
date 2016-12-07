@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_mc_main_menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="android.hmkcode.com.MUAC_CW_Cameron_Anderson.mcMainMenu">
+
+    <TextView
+        android:text="Main Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvMain"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"/>
+
+    <Button
+        android:text="Log out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogOut"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/buttonTimetable"
+        android:layout_alignStart="@+id/buttonTimetable"/>
+
+    <Button
+        android:text="Timetable"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:id="@+id/buttonTimetable"
+        android:onClick="onClick"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/buttonMap"
+        android:layout_alignStart="@+id/buttonMap"/>
+
+    <Button
+        android:text="Map"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonMap"
+        android:layout_height="75dp"
+        android:onClick="onClick"
+        android:layout_above="@+id/buttonTimetable"
+        android:layout_alignStart="@+id/tvMain"
+        android:layout_alignEnd="@+id/tvMain"/>
+</RelativeLayout>

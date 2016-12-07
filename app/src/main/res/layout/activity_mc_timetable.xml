@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_mc_timetable"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="android.hmkcode.com.MUAC_CW_Cameron_Anderson.mcTimetable">
+
+    <Button
+        android:text="Go to Map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnChooseBus"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="Number 6 times"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTimes6"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/ListViewTimes21"
+        android:layout_alignParentTop="true"/>
+
+    <ListView
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnChooseBus"
+        android:id="@+id/ListViewTimes6"
+        android:layout_width="175dp"
+        android:layout_below="@+id/tvTimes21"/>
+
+    <ListView
+        android:layout_width="175dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnChooseBus"
+        android:layout_toEndOf="@+id/ListViewTimes6"
+        android:id="@+id/ListViewTimes21"
+        android:layout_below="@+id/tvTimes21"/>
+
+    <TextView
+        android:text="Number 21 Times"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTimes21"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tvTimes6"/>
+
+</RelativeLayout>

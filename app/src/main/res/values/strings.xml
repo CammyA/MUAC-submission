@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MUAC_CW_CameronAnderson</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="about">About</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
